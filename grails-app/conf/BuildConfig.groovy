@@ -24,6 +24,7 @@ grails.project.dependency.resolution = {
 
         mavenLocal()
         mavenCentral()
+        mavenRepo "http://maven.springframework.org/milestone/"
 
         // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
         //mavenRepo "http://snapshots.repository.codehaus.org"
@@ -38,6 +39,7 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
+        compile ":cloud-foundry:1.2.3"
         runtime ":hibernate:$grailsVersion"
         runtime ":jquery:1.8.0"
         runtime ":resources:1.1.6"
