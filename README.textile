@@ -1,4 +1,27 @@
-morika
+h1. morika
 ======
 
 2013.04.19 g＊ワークショップz apr2013-grails+cloud_foundry向けサンプルアプリケーション
+
+h2. 使い方
+
+h3. cloudfoundryへの接続情報設定
+
+<pre>
+$ vi ~/.grails/settings.groovy
+grails.plugin.cloudfoundry.username = 'ユーザ名'
+grails.plugin.cloudfoundry.password = 'パスワード'
+grails.plugin.cloudfoundry.target = 'http://api.cloudfoundry.com'
+</pre>
+
+h3. ソースのcloneとpush
+
+<pre>
+$ git clone https://github.com/morika-t/morika.git
+$ cd morika
+$ grails refresh-dependencies
+$ grails prod cf-push
+</pre>
+
+plugin自体の細かい説明は以下のページを参照
+http://grails-plugins.github.io/grails-cloud-foundry/docs/manual/index.html
