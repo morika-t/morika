@@ -117,6 +117,7 @@
 					</g:each>
 				</ul>
 			</div>
+                        <div>${System.getenv('VMC_SERVICES').replaceAll(",","<br />")}</div>
 		</div>
 	</body>
 </html>
