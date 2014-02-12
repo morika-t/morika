@@ -39,6 +39,7 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
+        compile ':console:1.2'
         compile ":cloud-foundry:1.2.3"
         runtime ":hibernate:$grailsVersion"
         runtime ":jquery:1.8.0"
